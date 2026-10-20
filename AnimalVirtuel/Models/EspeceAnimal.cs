@@ -4,7 +4,11 @@ using System.Text;
 
 namespace AnimalVirtuel.Models
 {
-    internal class EspeceAnimal
+    public enum EspeceAnimal
     {
+        Chien,
+        Chat,
+        Lapin
+        
     }
 }

@@ -8,13 +8,13 @@ namespace AnimalVirtuel.Models
     {
         public string Nom { get; set;  }
 
-        public enum Espece { }
+        public int Faim { get; set; } = 70;
 
-        public int Faim {  get; set; }
+        public int Bonheur { get; set; } = 70;
 
-        public int Bonheur { get; set; }
+        public int Energie { get; set; } = 100;
 
-        public int Energie { get; set; }
+        public EspeceAnimal Espece { get; set; }
 
     }
 }

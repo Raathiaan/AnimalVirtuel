@@ -1,13 +1,9 @@
 ﻿using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.ComponentModel;
+using AnimalVirtuel.Models;
+
 
 namespace AnimalVirtuel
 {
@@ -19,6 +15,12 @@ namespace AnimalVirtuel
         public MainWindow()
         {
             InitializeComponent();
+            Animal animal = new Animal();
+            animal.Nom = "Mimi";
+            animal.Espece = EspeceAnimal.Chien;
+
+            MessageBox.Show($"{animal.Nom} est un {animal.Espece}, sa faim est de {animal.Faim}, son bonheur est de {animal.Bonheur} et son énergie est à {animal.Energie}");
+            
         }
     }
 }
